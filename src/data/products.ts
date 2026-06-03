@@ -79,7 +79,6 @@ export const products: Product[] = [
       { id: 3, name: 'Reem Khaled', nameAr: 'ريم خالد', date: '2026-01-15', rating: 5, text: 'بسيط وشيك في نفس الوقت، بالظبط اللي كنت بدور عليه', textEn: 'Simple and chic at the same time, exactly what I was looking for', verified: true },
     ],
   },
-  {
 {
   id: 3,
   nameAr: 'فستان كراميش أنيق - خامة تركي Premium',
