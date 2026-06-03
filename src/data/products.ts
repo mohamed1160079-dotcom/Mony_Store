@@ -90,6 +90,8 @@ export const products: Product[] = [
       'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-49-59.jpg',
       'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-01.jpg',
       'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-04.jpg',
+      'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_%D9%A2%D9%A0%D9%A2%D9%A6-%D9%A0%D9%A4-%D9%A2%D9%A4_%D9%A1%D9%A1-%D9%A2%D9%A6-%D9%A3%D9%A9.jpg',
+      'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-06-04_00-14-00.jpg',
     ],
     category: 'clothing',
     categoryAr: 'ملابس',
@@ -99,15 +101,13 @@ export const products: Product[] = [
     reviews: 347,
     inStock: true,
     sold: 621,
-    descAr: '✨ فستان كراميش أنيق بتصميم راقي وعصري
+    descAr: `✨ فستان كراميش أنيق بتصميم راقي وعصري
 
-يتميز الفستان بتفاصيل الكراميش على الكتف التي تضيف لمسة فخامة وأناقة مميزة، مع قصة مريحة تناسب مختلف المناسبات والخروجات.
+يتميز الفستان بتفاصيل الكراميش على الكتف التي تضيف لمسة فخامة وأناقة مميزة.
 
 ✔ خامة سي بي إتش تركي عالية الجودة
 ✔ تصميم أنيق وعملي
-✔ كراميش مميزة على الكتف
-✔ مريح في الحركة والارتداء
-✔ مناسب للمناسبات والخروجات والسهرات
+✔ مناسب للمناسبات والخروجات
 
 📏 المقاس:
 ون سايز مناسب حتى 85 كجم براحة.
@@ -116,13 +116,10 @@ export const products: Product[] = [
 شحن لجميع المحافظات.
 
 💵 الدفع:
-الدفع عند الاستلام.
-
-🔄 الاستبدال والإرجاع:
-إمكانية الاستبدال أو الإرجاع وفق سياسة المتجر.',
+الدفع عند الاستلام.`,
     descEn: 'Elegant dress with a calm design and comfortable fabric, perfect for outings and simple occasions. Soft details and a refined feminine touch for a chic look without being overdone.',
-    sizes: ['S', 'M', 'L', 'XL'],
-    sizeInfo: { ar: 'متوفر بجميع المقاسات من S إلى XL', en: 'Available in all sizes from S to XL' },
+    sizes: [One Size],
+    sizeInfo: { ar: 'ون سايز حتى 85 كجم', en: 'Available in all sizes from S to XL' },
     colors: [
       { nameAr: 'وردي', nameEn: 'Pink', hex: '#E8A0BF', image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-49-59.jpg' },
       { nameAr: 'بيج', nameEn: 'Beige', hex: '#D2B48C', image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-01.jpg' },
