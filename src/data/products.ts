@@ -189,9 +189,10 @@ export const products: Product[] = [
       text: 'من أحلى الفساتين اللي اشتريتها، التفاصيل دقيقة والقماش مريح',
       textEn: 'One of the best dresses I bought, the details are fine and the fabric is comfortable',
       verified: true
-    }
-  ]
+      ]
 },
+
+];
 
 export const categories = [
   { id: 'clothing', nameAr: 'ملابس', nameEn: 'Clothing', icon: '👗', count: 48 },
