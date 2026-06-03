@@ -21,20 +21,16 @@ export const products: Product[] = [
     reviews: 432,
     inStock: true,
     sold: 992,
-    descAr: 'سوت كتان فاخر بتصميم عصري وأنيق، مصنوع من الكتان المستورد عالي الجودة. مريح جداً ومناسب للخروجات والمناسبات المختلفة.',
-    descEn: 'Luxurious linen suit with modern and elegant design, made from high-quality imported linen. Very comfortable and suitable for various occasions.',
+    descAr: 'سوت كتان فاخر بتصميم عصري وأنيق',
+    descEn: 'Luxurious linen suit with modern and elegant design',
     sizes: ['One Size'],
     sizeInfo: { ar: 'وان سايز من 60 ك إلى 80 ك براحة', en: 'One Size fits 60kg to 80kg comfortably' },
     colors: [
       { nameAr: 'أسود', nameEn: 'Black', hex: '#1a1a1a', image: 'https://ik.imagekit.io/n9fgagbyoz/ChatGPT%20Image%2026%20%D9%85%D8%A7%D9%8A%D9%88%202026_%2012_45_55%20%D8%B5.png' },
-      { nameAr: 'بني', nameEn: 'Brown', hex: '#8B4513', image: 'https://ik.imagekit.io/n9fgagbyoz/ChatGPT%20Image%2026%20%D9%85%D8%A7%D9%8A%D9%88%202026_%2012_45_07%20%D8%B5.png' },
-      { nameAr: 'نبيتي', nameEn: 'Burgundy', hex: '#722F37', image: 'https://ik.imagekit.io/n9fgagbyoz/ChatGPT%20Image%2026%20%D9%85%D8%A7%D9%8A%D9%88%202026_%2012_46_01%20%D8%B5.png' },
     ],
     material: { ar: 'كتان مستورد', en: 'Imported Linen' },
     customReviews: [
       { id: 1, name: 'Noor Mohamed', nameAr: 'نور محمد', date: '2026-01-15', rating: 5, text: 'وصلني السوت وخامته تحفه.', textEn: 'Received the suit and the fabric is amazing.', verified: true },
-      { id: 2, name: 'Sara A.', nameAr: 'سارة أ.', date: '2026-01-10', rating: 5, text: 'الف شكر وصلني النهارده وعجبني ومش اخر تعامل ابدا ان شاء الله', textEn: 'Thank you so much, received it today and I loved it. Definitely not my last order!', verified: true },
-      { id: 3, name: 'Ola Fares', nameAr: 'علا فارس', date: '2024-06-10', rating: 5, text: 'مش متعوده اعمل كومنت علي حاجه بس الصراحه عجبني جدا عكس ما اتوقعت', textEn: 'I usually don\'t comment but honestly I loved it so much, exceeded my expectations', verified: true },
     ],
   },
   {
@@ -47,7 +43,6 @@ export const products: Product[] = [
     images: [
       'https://ik.imagekit.io/n9fgagbyoz/New%20Folder/photo_3_2026-05-26_02-37-07.jpg',
       'https://ik.imagekit.io/n9fgagbyoz/New%20Folder/photo_2_2026-05-26_02-37-07.jpg',
-      'https://ik.imagekit.io/n9fgagbyoz/New%20Folder/photo_10_2026-05-26_02-37-07.jpg',
     ],
     category: 'clothing',
     categoryAr: 'ملابس',
@@ -57,33 +52,27 @@ export const products: Product[] = [
     reviews: 287,
     inStock: true,
     sold: 564,
-    descAr: 'شميز أنيق بتصميم هادئ وخامة مريحة مناسبة للخروجات والمناسبات، بتفاصيل ناعمة ولمسة أنثوية راقية تعطي مظهر شيك بدون تكلف.',
-    descEn: 'Elegant chemise with a calm design and comfortable fabric, perfect for outings and occasions. Features soft details and a refined feminine touch for an effortlessly chic look.',
+    descAr: 'شميز أنيق بتصميم هادئ وخامة مريحة',
+    descEn: 'Elegant chemise with a calm design and comfortable fabric',
     sizes: ['S', 'M', 'L', 'XL'],
     sizeInfo: { ar: 'متوفر بجميع المقاسات من S إلى XL', en: 'Available in all sizes from S to XL' },
     colors: [
       { nameAr: 'بيج', nameEn: 'Beige', hex: '#D2B48C', image: 'https://ik.imagekit.io/n9fgagbyoz/New%20Folder/photo_3_2026-05-26_02-37-07.jpg' },
-      { nameAr: 'أبيض', nameEn: 'White', hex: '#FAF9F6', image: 'https://ik.imagekit.io/n9fgagbyoz/New%20Folder/photo_2_2026-05-26_02-37-07.jpg' },
-      { nameAr: 'أسود', nameEn: 'Black', hex: '#1a1a1a', image: 'https://ik.imagekit.io/n9fgagbyoz/New%20Folder/photo_10_2026-05-26_02-37-07.jpg' },
     ],
     material: { ar: 'قماش مستورد عالي الجودة', en: 'High-quality imported fabric' },
     customReviews: [
-      { id: 1, name: 'Mariam Hassan', nameAr: 'مريم حسن', date: '2026-02-01', rating: 5, text: 'الشميز شكله حلو أوي والخامة ممتازة، لبسته في خروجة وكل صحابي سألوني عليه', textEn: 'The chemise looks so beautiful and the fabric is excellent, wore it out and all my friends asked about it', verified: true },
-      { id: 2, name: 'Dina Samir', nameAr: 'دينا سمير', date: '2026-01-22', rating: 5, text: 'تاني حاجة بشتريها من عندكم والجودة كل مرة بتبهرني، شكراً', textEn: 'Second purchase from you and the quality amazes me every time, thank you', verified: true },
-      { id: 3, name: 'Reem Khaled', nameAr: 'ريم خالد', date: '2026-01-15', rating: 5, text: 'بسيط وشيك في نفس الوقت، بالظبط اللي كنت بدور عليه', textEn: 'Simple and chic at the same time, exactly what I was looking for', verified: true },
+      { id: 1, name: 'Mariam Hassan', nameAr: 'مريم حسن', date: '2026-02-01', rating: 5, text: 'الشميز شكله حلو', textEn: 'Beautiful chemise', verified: true },
     ],
   },
   {
     id: 3,
-    nameAr: 'فستان كراميش أنيق - خامة تركي Premium',
+    nameAr: 'فستان كراميش أنيق',
     nameEn: 'Elegant Shoulder Ruffle Dress',
     price: 750,
     oldPrice: 900,
     image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-49-59.jpg',
     images: [
       'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-49-59.jpg',
-      'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-01.jpg',
-      'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-04.jpg',
     ],
     category: 'clothing',
     categoryAr: 'ملابس',
@@ -93,20 +82,16 @@ export const products: Product[] = [
     reviews: 347,
     inStock: true,
     sold: 621,
-    descAr: 'فستان كراميش أنيق بتصميم راقي وعصري. يتميز الفستان بتفاصيل الكراميش على الكتف التي تضيف لمسة فخامة وأناقة مميزة. خامة سي بي إتش تركي عالية الجودة. تصميم أنيق وعملي. مناسب للمناسبات والخروجات. ون سايز مناسب حتى 85 كجم براحة.',
-    descEn: 'Elegant shoulder ruffle dress made from premium Turkish fabric. Perfect for outings, occasions and everyday elegance.',
+    descAr: 'فستان كراميش أنيق بتصميم راقي وعصري',
+    descEn: 'Elegant shoulder ruffle dress made from premium Turkish fabric',
     sizes: ['One Size'],
     sizeInfo: { ar: 'ون سايز مناسب حتى 85 كجم براحة', en: 'One Size fits up to 85kg comfortably' },
     colors: [
       { nameAr: 'وردي', nameEn: 'Pink', hex: '#E8A0BF', image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-49-59.jpg' },
-      { nameAr: 'بيج', nameEn: 'Beige', hex: '#D2B48C', image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-01.jpg' },
-      { nameAr: 'أوف وايت', nameEn: 'Off White', hex: '#FAF9F6', image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-04.jpg' },
     ],
     material: { ar: 'خامة سي بي إتش تركي Premium', en: 'Premium Turkish CPH Fabric' },
     customReviews: [
-      { id: 1, name: 'Mariam Hassan', nameAr: 'مريم حسن', date: '2026-01-18', rating: 5, text: 'الفستان تحفة والخامة حلوة جداً، لبسته في فرح وكل الناس سألتني عليه', textEn: 'The dress is amazing and the fabric is so nice, I wore it to a wedding and everyone asked about it', verified: true },
-      { id: 2, name: 'Dina Samir', nameAr: 'دينا سمير', date: '2026-01-12', rating: 5, text: 'أنيق جداً وشكله زي الصور بالظبط، شكراً ليكم', textEn: 'Very elegant and looks exactly like the photos, thank you', verified: true },
-      { id: 3, name: 'Heba Ali', nameAr: 'هبة علي', date: '2026-01-05', rating: 5, text: 'من أحلى الفساتين اللي اشتريتها، التفاصيل دقيقة والقماش مريح', textEn: 'One of the best dresses I bought, the details are fine and the fabric is comfortable', verified: true },
+      { id: 1, name: 'Mariam Hassan', nameAr: 'مريم حسن', date: '2026-01-18', rating: 5, text: 'الفستان تحفة', textEn: 'Amazing dress', verified: true },
     ],
   },
 ];
@@ -121,9 +106,9 @@ export const categories = [
 ];
 
 export const testimonials = [
-  { id: 1, nameAr: 'سارة أحمد', nameEn: 'Sara Ahmed', textAr: 'تجربة تسوق رائعة! المنتجات جودتها عالية جداً والتوصيل سريع. أنصح الكل يجرب', textEn: 'Amazing shopping experience! Products are high quality and delivery is fast. Highly recommended!', rating: 5, location: 'القاهرة', locationEn: 'Cairo' },
-  { id: 2, nameAr: 'نور محمد', nameEn: 'Nour Mohamed', textAr: 'أحلى موقع للتسوق! الأسعار ممتازة والجودة مضمونة. شكراً موني ستور', textEn: 'Best shopping site! Great prices and guaranteed quality. Thank you Mony Store!', rating: 5, location: 'الإسكندرية', locationEn: 'Alexandria' },
-  { id: 3, nameAr: 'مريم خالد', nameEn: 'Mariam Khaled', textAr: 'الفساتين جميلة جداً وبالضبط زي الصور. التغليف كان فخم. حبيت التجربة', textEn: 'Dresses are beautiful and exactly like the pictures. Packaging was luxurious. Loved it!', rating: 5, location: 'المنصورة', locationEn: 'Mansoura' },
+  { id: 1, nameAr: 'سارة أحمد', nameEn: 'Sara Ahmed', textAr: 'تجربة تسوق رائعة!', textEn: 'Amazing shopping experience!', rating: 5, location: 'القاهرة', locationEn: 'Cairo' },
+  { id: 2, nameAr: 'نور محمد', nameEn: 'Nour Mohamed', textAr: 'أحلى موقع للتسوق!', textEn: 'Best shopping site!', rating: 5, location: 'الإسكندرية', locationEn: 'Alexandria' },
+  { id: 3, nameAr: 'مريم خالد', nameEn: 'Mariam Khaled', textAr: 'الفساتين جميلة جداً', textEn: 'Beautiful dresses', rating: 5, location: 'المنصورة', locationEn: 'Mansoura' },
 ];
 
 export const governoratesWithCities: Record<string, string[]> = {
@@ -133,4 +118,27 @@ export const governoratesWithCities: Record<string, string[]> = {
   'الدقهلية': ['المنصورة', 'طلخا', 'ميت غمر', 'دكرنس', 'أجا', 'منية النصر', 'السنبلاوين', 'شربين', 'بلقاس', 'المنزلة', 'تمي الأمديد', 'الجمالية', 'نبروه'],
   'البحر الأحمر': ['الغردقة', 'سفاجا', 'القصير', 'مرسى علم', 'رأس غارب', 'الشلاتين', 'حلايب'],
   'البحيرة': ['دمنهور', 'كفر الدوار', 'رشيد', 'إيتاي البارود', 'أبو حمص', 'الدلنجات', 'المحمودية', 'الرحمانية', 'إدكو', 'أبو المطامير', 'حوش عيسى', 'شبراخيت', 'كوم حمادة', 'وادي النطرون', 'النوبارية الجديدة'],
-  'الفيوم': 
+  'الفيوم': ['الفيوم', 'سنورس', 'إطسا', 'طامية', 'أبشواي', 'يوسف الصديق'],
+  'الغربية': ['طنطا', 'المحلة الكبرى', 'كفر الزيات', 'زفتى', 'السنطة', 'قطور', 'بسيون', 'سمنود'],
+  'الإسماعيلية': ['الإسماعيلية', 'فايد', 'القنطرة شرق', 'القنطرة غرب', 'التل الكبير', 'أبو صوير', 'القصاصين'],
+  'المنوفية': ['شبين الكوم', 'مدينة السادات', 'منوف', 'سرس الليان', 'أشمون', 'الباجور', 'قويسنا', 'بركة السبع', 'تلا', 'الشهداء'],
+  'المنيا': ['المنيا', 'ملوي', 'مغاغة', 'بني مزار', 'سمالوط', 'مطاي', 'أبو قرقاص', 'العدوة', 'دير مواس'],
+  'القليوبية': ['بنها', 'شبرا الخيمة', 'قليوب', 'القناطر الخيرية', 'الخانكة', 'كفر شكر', 'طوخ', 'شبين القناطر', 'العبور', 'الخصوص'],
+  'الوادي الجديد': ['الخارجة', 'الداخلة', 'الفرافرة', 'باريس', 'بلاط'],
+  'السويس': ['السويس', 'الأربعين', 'عتاقة', 'الجناين', 'فيصل'],
+  'أسوان': ['أسوان', 'كوم أمبو', 'نصر النوبة', 'دراو', 'إدفو', 'أبو سمبل'],
+  'أسيوط': ['أسيوط', 'ديروط', 'منفلوط', 'القوصية', 'أبنوب', 'الفتح', 'ساحل سليم', 'أبو تيج', 'صدفا', 'البداري'],
+  'بني سويف': ['بني سويف', 'الواسطى', 'ناصر', 'إهناسيا', 'ببا', 'الفشن', 'سمسطا'],
+  'بورسعيد': ['بورسعيد', 'بورفؤاد', 'الزهور', 'الشرق', 'الضواحي', 'المناخ', 'العرب'],
+  'دمياط': ['دمياط', 'دمياط الجديدة', 'رأس البر', 'فارسكور', 'الزرقا', 'كفر سعد', 'السرو'],
+  'الشرقية': ['الزقازيق', 'العاشر من رمضان', 'منيا القمح', 'بلبيس', 'أبو حماد', 'القرين', 'ههيا', 'أبو كبير', 'فاقوس', 'الصالحية الجديدة', 'ديرب نجم', 'كفر صقر', 'الحسينية'],
+  'جنوب سيناء': ['شرم الشيخ', 'دهب', 'نويبع', 'طابا', 'سانت كاترين', 'الطور', 'رأس سدر', 'أبو زنيمة'],
+  'كفر الشيخ': ['كفر الشيخ', 'دسوق', 'فوه', 'مطوبس', 'بلطيم', 'برج البرلس', 'سيدي سالم', 'بيلا', 'الحامول', 'قلين'],
+  'مطروح': ['مرسى مطروح', 'الحمام', 'العلمين', 'الضبعة', 'سيدي براني', 'السلوم', 'سيوة'],
+  'الأقصر': ['الأقصر', 'الأقصر الجديدة', 'طيبة الجديدة', 'الزينية', 'القرنة', 'أرمنت', 'الطود', 'إسنا'],
+  'قنا': ['قنا', 'نجع حمادي', 'دشنا', 'الوقف', 'قوص', 'نقادة', 'أبو تشت', 'فرشوط', 'قفط'],
+  'شمال سيناء': ['العريش', 'الشيخ زويد', 'رفح', 'بئر العبد', 'الحسنة', 'نخل'],
+  'سوهاج': ['سوهاج', 'أخميم', 'طهطا', 'جرجا', 'البلينا', 'المراغة', 'المنشاة', 'دار السلام', 'جهينة', 'ساقلتة', 'طما'],
+};
+
+export const governorates = Object.keys(governoratesWithCities);
