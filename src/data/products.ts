@@ -81,7 +81,7 @@ export const products: Product[] = [
   },
   {
     id: 3,
-    nameAr: 'فستان مستورد تحفة',
+    nameAr: 'فستان كراميش أنيق - خامة تركي Premium',
     nameEn: 'Imported Elegant Dress',
     price: 750,
     oldPrice: 900,
@@ -99,7 +99,27 @@ export const products: Product[] = [
     reviews: 347,
     inStock: true,
     sold: 621,
-    descAr: 'فستان أنيق بتصميم هادئ وخامة مريحة مناسبة للخروجات والمناسبات البسيطة، بتفاصيل ناعمة ولمسة أنثوية راقية تعطي مظهر شيك بدون تكلف.',
+    descAr: '✨ فستان كراميش أنيق بتصميم راقي وعصري
+
+يتميز الفستان بتفاصيل الكراميش على الكتف التي تضيف لمسة فخامة وأناقة مميزة، مع قصة مريحة تناسب مختلف المناسبات والخروجات.
+
+✔ خامة سي بي إتش تركي عالية الجودة
+✔ تصميم أنيق وعملي
+✔ كراميش مميزة على الكتف
+✔ مريح في الحركة والارتداء
+✔ مناسب للمناسبات والخروجات والسهرات
+
+📏 المقاس:
+ون سايز مناسب حتى 85 كجم براحة.
+
+🚚 الشحن:
+شحن لجميع المحافظات.
+
+💵 الدفع:
+الدفع عند الاستلام.
+
+🔄 الاستبدال والإرجاع:
+إمكانية الاستبدال أو الإرجاع وفق سياسة المتجر.',
     descEn: 'Elegant dress with a calm design and comfortable fabric, perfect for outings and simple occasions. Soft details and a refined feminine touch for a chic look without being overdone.',
     sizes: ['S', 'M', 'L', 'XL'],
     sizeInfo: { ar: 'متوفر بجميع المقاسات من S إلى XL', en: 'Available in all sizes from S to XL' },
@@ -108,7 +128,7 @@ export const products: Product[] = [
       { nameAr: 'بيج', nameEn: 'Beige', hex: '#D2B48C', image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-01.jpg' },
       { nameAr: 'أوف وايت', nameEn: 'Off White', hex: '#FAF9F6', image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-04.jpg' },
     ],
-    material: { ar: 'قماش مستورد عالي الجودة', en: 'High-quality imported fabric' },
+    material: { ar: 'فستان أنيق بتصميم راقي وكراميش مميزة على الكتف تمنحه لمسة أنثوية جذابة. مناسب للمناسبات والخروجات ويجمع بين الشياكة والراحة طوال اليوم.', en: 'High-quality imported fabric' },
     videos: [
       'https://ik.imagekit.io/n9fgagbyoz/Scene%20Builder%20-%20Create%20a%20cinematic%20luxury%20fashion%20promo%20video%20from%20the%20uploaded%20image_The%20vide.mp4',
       'https://ik.imagekit.io/n9fgagbyoz/IMG_6963.MP4',
