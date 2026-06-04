@@ -243,15 +243,15 @@ export const products: Product[] = [
         image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-04.jpg',
       },
        {
-        nameAr: 'اسود',
-        nameEn: 'Black',
-        hex: '#1E1F28',
-        image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-04.jpg',
-      },
-       {
         nameAr: 'فيروز',
         nameEn: 'Turquoise',
         hex: '#1F5668',
+        image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-04.jpg',
+      },
+       {
+        nameAr: 'اسود',
+        nameEn: 'Black',
+        hex: '#1E1F28',
         image: 'https://ik.imagekit.io/n9fgagbyoz/%D9%81%D8%B3%D8%AA%D8%A7%D9%86/photo_2026-05-26_02-50-04.jpg',
       },
     ],
