@@ -11,6 +11,16 @@ interface CheckoutProps {
   onOrderSuccess: () => void;
 }
 
+
+const shippingRates: Record<string, number> = {
+  "القاهرة": 55, "الجيزة": 55, "الشرقية": 55, "القليوبية": 55,
+  "الإسكندرية": 65, "البحيرة": 65, "كفر الشيخ": 65, "الغربية": 65, "المنوفية": 65, "الدقهلية": 65, "دمياط": 65,
+  "بورسعيد": 70, "الإسماعيلية": 70, "السويس": 70,
+  "الفيوم": 75, "بني سويف": 75, "المنيا": 75,
+  "أسيوط": 100, "سوهاج": 100, "قنا": 100, "الأقصر": 100, "أسوان": 100,
+  "مطروح": 110, "شمال سيناء": 110, "جنوب سيناء": 110, "البحر الأحمر": 110, "الوادي الجديد": 110,
+};
+
 export default function Checkout({ onBack, onOrderSuccess }: CheckoutProps) {
   const { t, lang, isRTL } = useLang();
   const { items, totalPrice, clearCart } = useCart();
@@ -56,7 +66,7 @@ export default function Checkout({ onBack, onOrderSuccess }: CheckoutProps) {
     setSubmitError('');
 
     const orderNumber = `MS-${Date.now().toString().slice(-4)}`;
-    const shipping = 50;
+    const shipping = shippingRates[form.governorate] || 0;
 
     const whatsappMessage = encodeURIComponent(`🛍️ طلب جديد من Mony Store\n\n👤 الاسم: ${form.name}\n📞 الهاتف: ${form.phone}\n📍 العنوان: ${form.governorate} - ${form.city} - ${form.address}\n\n🧾 المنتجات:\n${items.map(i => `• ${i.product.nameAr} × ${i.quantity}`).join('\n')}\n\n💰 الإجمالي: ${totalPrice + shipping} جنيه`);
 
@@ -85,7 +95,7 @@ export default function Checkout({ onBack, onOrderSuccess }: CheckoutProps) {
     }
   };
 
-  const shippingCost = 50;
+  const shippingCost = shippingRates[form.governorate] || 0;
   const finalTotal = totalPrice + shippingCost;
 
   return (
@@ -189,7 +199,7 @@ export default function Checkout({ onBack, onOrderSuccess }: CheckoutProps) {
               <div className="space-y-2.5 border-t border-pink-50 pt-3">
                 <div className="flex justify-between text-xs"><span className="text-gray-500">{t('cart.subtotal')}</span><span className="font-medium">{totalPrice} {t('products.egp')}</span></div>
                 <div className="flex justify-between text-xs"><span className="text-gray-500">{t('cart.shipping')}</span><span className="font-medium">{shippingCost} {t('products.egp')}</span></div>
-                <div className="flex justify-between text-base font-bold border-t border-pink-50 pt-2.5"><span>{t('cart.total')}</span><span className="text-pink-600">{finalTotal} {t('products.egp')}</span></div>
+                <div className="flex justify-between text-base font-bold border-t border-pink-0 pt-2.5"><span>{t('cart.total')}</span><span className="text-pink-600">{finalTotal} {t('products.egp')}</span></div>
               </div>
 
               {/* Error */}

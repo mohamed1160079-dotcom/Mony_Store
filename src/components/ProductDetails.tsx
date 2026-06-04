@@ -231,7 +231,7 @@ export default function ProductDetails({ product, onBack, onQuickView, onBuyNow 
             <div className="flex items-center gap-3 mb-5 flex-wrap">
               <span className="text-2xl sm:text-3xl font-bold text-pink-600">{product.price} <span className="text-sm">{t('products.egp')}</span></span>
               {product.oldPrice && <span className="text-base text-gray-400 line-through">{product.oldPrice} {t('products.egp')}</span>}
-              {discount > 0 && <span className="px-3 py-1 bg-green-50 text-green-600 text-xs font-bold rounded-full border border-green-100">{isRTL ? `وفري ${product.oldPrice! - product.price} ج.م` : `Save ${product.oldPrice! - product.price} EGP`}</span>}
+              {discount > 0 && <span className="px-3 py-1 bg-green-0 text-green-600 text-xs font-bold rounded-full border border-green-100">{isRTL ? `وفري ${product.oldPrice! - product.price} ج.م` : `Save ${product.oldPrice! - product.price} EGP`}</span>}
             </div>
 
             {/* Features */}

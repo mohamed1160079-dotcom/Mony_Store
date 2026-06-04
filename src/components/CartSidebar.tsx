@@ -131,11 +131,11 @@ export default function CartSidebar({ isOpen, onClose, onCheckout }: CartSidebar
                 </div>
                 <div className="flex justify-between text-xs">
                   <span className="text-gray-500">{t('cart.shipping')}</span>
-                  <span className="font-semibold text-gray-600">50 {t('products.egp')}</span>
+                  <span className="font-semibold text-gray-600">0 {t('products.egp')}</span>
                 </div>
                 <div className="flex justify-between font-bold text-base border-t border-pink-50 pt-3">
                   <span>{t('cart.total')}</span>
-                  <span className="text-pink-600">{totalPrice + 50} {t('products.egp')}</span>
+                  <span className="text-pink-600">{totalPrice} {t('products.egp')}</span>
                 </div>
                 <button
                   onClick={onCheckout}

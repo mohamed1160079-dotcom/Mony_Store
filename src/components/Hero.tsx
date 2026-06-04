@@ -72,7 +72,7 @@ export default function Hero({ onShopNow }: HeroProps) {
                 </button>
                 <button 
                   onClick={onShopNow}
-                  className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 bg-white/80 border border-pink-200 text-pink-600 rounded-xl sm:rounded-2xl font-semibold text-sm hover:bg-pink-50 hover:border-pink-300 transition-all duration-300 cursor-pointer"
+                  className="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 bg-white/80 border border-pink-200 text-pink-600 rounded-xl sm:rounded-2xl font-semibold text-sm hover:bg-pink-0 hover:border-pink-300 transition-all duration-300 cursor-pointer"
                 >
                   {t('hero.newArrivals')}
                 </button>
