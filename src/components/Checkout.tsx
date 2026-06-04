@@ -85,7 +85,7 @@ export default function Checkout({ onBack, onOrderSuccess }: CheckoutProps) {
     });
 
     if (success) {
-      window.open(`https://wa.me/201021569722?text=${whatsappMessage}`, '_blank');
+      // WhatsApp redirect removed
       clearCart();
       setIsSubmitting(false);
       onOrderSuccess();

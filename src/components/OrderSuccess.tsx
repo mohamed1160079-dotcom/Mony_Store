@@ -61,8 +61,6 @@ export default function OrderSuccess({ onBackHome }: OrderSuccessProps) {
             ))}
           </div>
 
-          <a href="https://wa.me/201021569722" target="_blank" className="mb-3 w-full flex items-center justify-center gap-2 py-3 border border-green-200 bg-green-50 text-green-700 rounded-xl font-bold text-sm">💬 تواصل واتساب مباشر لتأكيد الطلب</a>
-
           <button
             onClick={onBackHome}
             className="w-full py-3.5 bg-gradient-to-r from-pink-500 via-rose-500 to-pink-600 text-white rounded-xl font-bold text-sm shadow-lg shadow-pink-200/50 hover:shadow-pink-300/60 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2"

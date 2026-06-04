@@ -57,7 +57,12 @@ export default function ProductDetails({ product, onBack, onQuickView, onBuyNow 
     setSelectedColor(color);
     if (color.image) {
       const idx = media.findIndex(m => m.type === 'image' && m.src === color.image);
-      setSelectedImage(idx !== -1 ? idx : 0);
+      if (idx >= 0) {
+        setSelectedImage(idx);
+      } else {
+        const imageOnlyIndex = images.findIndex(img => img === color.image);
+        if (imageOnlyIndex >= 0) setSelectedImage(imageOnlyIndex);
+      }
     }
   };
 
