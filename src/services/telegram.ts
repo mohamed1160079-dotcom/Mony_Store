@@ -1,7 +1,7 @@
 import { CartItem } from '../context/CartContext';
 
 const TG_TOKEN = '8608097304:AAG7D3wtpOsyeNAdjagSd2a8FDaUcAHomvU';
-const TG_CHAT = '1355750983';
+const TG_CHAT = '-5102554761';
 
 interface OrderData {
   orderNumber: string;
@@ -43,6 +43,7 @@ function buildProductsText(items: CartItem[]): string {
 
 export async function sendOrderToTelegram(data: OrderData): Promise<boolean> {
   const productsText = buildProductsText(data.items);
+  const firstImage=(data.items.find(i=>i.image)?.image)||data.items[0]?.product?.image;
 
   const message = `🛒 *طلب جديد | Mony Store*
 
@@ -76,12 +77,13 @@ ${productsText}
 🆔 رقم الطلب: #${data.orderNumber}`;
 
   try {
-    const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+    const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendPhoto`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         chat_id: TG_CHAT,
-        text: message,
+        photo:firstImage,
+        caption: message,
         parse_mode: 'Markdown',
       }),
     });

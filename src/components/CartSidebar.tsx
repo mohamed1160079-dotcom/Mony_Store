@@ -78,7 +78,7 @@ export default function CartSidebar({ isOpen, onClose, onCheckout }: CartSidebar
                       className="flex gap-2.5 p-2.5 bg-pink-50/30 rounded-xl border border-pink-50"
                     >
                       <img
-                        src={item.product.image}
+                        src={(item.image || item.product.image)}
                         alt={lang === 'ar' ? item.product.nameAr : item.product.nameEn}
                         className="w-16 h-20 object-cover rounded-lg flex-shrink-0"
                       />

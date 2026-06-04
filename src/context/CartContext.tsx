@@ -55,11 +55,12 @@ export interface CartItem {
   quantity: number;
   size?: string;
   color?: string;
+  image?: string;
 }
 
 interface CartContextType {
   items: CartItem[];
-  addToCart: (product: Product, quantity?: number, size?: string, color?: string) => void;
+  addToCart: (product: Product, quantity?: number, size?: string, color?: string, image?: string) => void;
   removeFromCart: (productId: number) => void;
   updateQuantity: (productId: number, quantity: number) => void;
   clearCart: () => void;
@@ -90,7 +91,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('mony-wishlist', JSON.stringify(wishlist));
   }, [wishlist]);
 
-  const addToCart = (product: Product, quantity = 1, size?: string, color?: string) => {
+  const addToCart = (product: Product, quantity = 1, size?: string, color?: string, image?: string) => {
     setItems(prev => {
       const existing = prev.find(i => i.product.id === product.id);
       if (existing) {
@@ -100,7 +101,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
             : i
         );
       }
-      return [...prev, { product, quantity, size, color }];
+      return [...prev, { product, quantity, size, color, image }];
     });
   };
 

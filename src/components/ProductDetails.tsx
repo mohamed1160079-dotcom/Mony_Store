@@ -70,13 +70,13 @@ export default function ProductDetails({ product, onBack, onQuickView, onBuyNow 
   const handleNext = () => setSelectedImage(p => (p < media.length - 1 ? p + 1 : 0));
 
   const handleAddToCart = () => {
-    addToCart(product, quantity, selectedSize, selectedColor?.nameEn);
+    addToCart(product, quantity, selectedSize, selectedColor?.nameEn, selectedColor?.image || product.image);
     setIsAdded(true);
     setTimeout(() => setIsAdded(false), 2000);
   };
 
   const handleBuyNow = () => {
-    addToCart(product, quantity, selectedSize, selectedColor?.nameEn);
+    addToCart(product, quantity, selectedSize, selectedColor?.nameEn, selectedColor?.image || product.image);
     onBuyNow();
   };
 

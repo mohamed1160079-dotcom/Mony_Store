@@ -185,7 +185,7 @@ export default function Checkout({ onBack, onOrderSuccess }: CheckoutProps) {
               <div className="space-y-2.5 mb-4 max-h-[200px] sm:max-h-[260px] overflow-y-auto scrollbar-hide">
                 {items.map(item => (
                   <div key={item.product.id} className="flex gap-2.5 p-2 rounded-lg bg-pink-50/30">
-                    <img src={item.product.image} alt={lang === 'ar' ? item.product.nameAr : item.product.nameEn} className="w-12 h-14 object-cover rounded-lg flex-shrink-0" />
+                    <img src={(item.image || item.product.image)} alt={lang === 'ar' ? item.product.nameAr : item.product.nameEn} className="w-12 h-14 object-cover rounded-lg flex-shrink-0" />
                     <div className="flex-1 min-w-0">
                       <p className="text-xs font-medium text-gray-700 line-clamp-1">{lang === 'ar' ? item.product.nameAr : item.product.nameEn}</p>
                       {item.color && <p className="text-[10px] text-pink-400">{item.color}</p>}
